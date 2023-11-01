@@ -15,6 +15,11 @@
             2.（原content的大小）(box-sizing: border-box)IE盒模型 = content（自动缩放）+ padding + border + margin  ； （本质就是对模型的缩放）
     - base.css 通用样式
 - css命名套路：
+
+    BEM css 命名规范 
+        Block weui-cell
+        Element weui-cell__bd 两个下划线
+        Modifier 状态  weui-cell_access 一个下划线
     -page
         __hd __bd __ft
     - btn panel cell
