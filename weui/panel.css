@@ -1,0 +1,7 @@
+/* 面板组件*/
+.weui-panel {
+    background-color: var(--weui-BG-2);
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+}

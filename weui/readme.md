@@ -12,10 +12,14 @@
         2种盒模型 ：
             1.（默认）标准盒子模型具体大小 = content（如height、width属性） +  padding + border + margin ；
             公摊
-            2.（原content的大小）IE盒模型 = content（自动缩放）+ padding + border + margin  ； （本质就是对模型的缩放）
+            2.（原content的大小）(box-sizing: border-box)IE盒模型 = content（自动缩放）+ padding + border + margin  ； （本质就是对模型的缩放）
     - base.css 通用样式
 - css命名套路：
     -page
         __hd __bd __ft
     - btn panel cell
     - 框架组件 BEM
+- css + 兄弟选择器
+- google 图片格式
+    1.base64 图片 小一点简单的  在css文件里使用 能减少性能的浪费
+    2.jpg|png|jpeg|wtt|webp     比较大 请求的并发
