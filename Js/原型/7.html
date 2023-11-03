@@ -1,0 +1,17 @@
+<script>
+    //Object.create() 括号中接受对象
+    let obj = {
+        a:1
+    }
+    let obj2 = Object.create(null)
+
+    //网易面试题：所有的对象最终都会继承自 Object.prototype ?
+    //错误，有特殊情况：由Object.create(null)创建的对象的原型为无
+</script>
+
+<script>
+    //黑色是字符串，数字是蓝的
+    let num =123
+    console.log(num.toString());
+    //依然可以用，因为隐式原型的尽头是object，object含有toString
+</script>

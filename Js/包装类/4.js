@@ -12,7 +12,7 @@
     // return this
 //}
 
-//new相当于在原函数生成一个this对象，且运行函数中的代码语句,最后return
+//new相当于在原函数生成一个this对象，且运行函数中的代码语句，然后创建一个隐式原型并完成赋值,最后return
 // let p =  new Person('海军',18,'boy')
 
 // console.log(p);
