@@ -46,8 +46,8 @@
 
 //面试题(阿里)
 var str = 'abc'
-str += 1 //'abc1'
-var test = typeof(str) //'string'
+str += 1 //'abc1' 注意：字符串类型与任意类型相加结果都是字符串类型
+var test = typeof(str) // test = 'string'
 if(test.length==6){// new String(test).length
     test.sign ='typeof的返回结果可能为String'
     // new String(test).sign ='typeof的返回结果可能为String'
