@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 画布 -->
+    <!-- 无文档流规则 -->
+    <canvas id="canvas" width="300" height="300"></canvas>
+    <script>
+        let canvas= document.getElementById("canvas")
+
+        let ctx = canvas.getContext("2d") //把dom结构的canvas转变成一个对象
+        // 制作矩形,fill:填充 
+        // 填充的内容会区分其顺序
+        // ctx.fillStyle = "green"
+        // ctx.fillRect(10,10,55,50)
+
+        // ctx.fillRect(10,10,100,50)
+        // ctx.strokeRect(10,70,100,50) 无填充色
+
+        //绘画直线
+        // ctx.beginPath()//路径的开始
+        // ctx.moveTo(50,50) //从（50，50）开始画
+        // ctx.lineTo(200,50) 
+        // ctx.lineTo(200,200)
+        // ctx.closePath() //闭合路径
+        // //ctx.stroke() //绘制
+        // ctx.fill() //填充
+
+        //绘画曲线
+        // ctx.beginPath()
+        // ctx.arc(50,50,40,0,Math.PI/2) //画曲线
+        // ctx.stroke()
+
+        //绘画文字
+        ctx.font = '30px sans-serif'
+        ctx.fillText('今天你写文章了吗?',10,100)
+        ctx.strokeText('我要写三篇',10,200)
+
+    </script>
+</body>
+</html>
