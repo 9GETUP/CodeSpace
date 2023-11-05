@@ -1,36 +1,39 @@
 //包装类
 
 //为什么输出undefined
-// var obj = {}
-// console.log(obj.a);
 
-// var num =123
-// num.abc = 'hello'
-// console.log(num.abc);
+var obj = {}
+console.log(obj.a);
 
-// var num = new Number(123);
-// num.abc = 'hello'  //添加属性时被识别为对象
-// console.log(num.abc); 
-// console.log(num * 2); //参与四则运算时又会被识别成数字
+
+var num =123
+num.abc = 'hello'
+console.log(num.abc);
+
+//使用数字的内置构造函数
+var num = new Number(123); //得到一个对象
+num.abc = 'hello'  //添加属性时被识别为对象
+console.log(num.abc); 
+console.log(num * 2); //参与四则运算时又会被识别成数字
 
 // var str = 'abcd'
 // console.log(str.length); //输出4
 
-// var num = 4
-// num.len = 3 //不可取语句
 
-//但是v8还是会创建一个构造函数，且赋值，最后自行删除
+// var num = 4
+// num.len = 3 //不可取语句，但是促使执行用构造函数创建：
+
+//只要强行在原始类型上访问属性，以下语句就会执行
+//但是v8还是会用构造函数创建一个数字对象，且赋值，最后自行删除
 // var num = new Number(4)
 // num.len =3
 // delete num.len
 
-
-//输出num.len时又会创建构造函数，但是len属性无值
-// console.log(num.len);
-
-//实际上执行以下语句
 // new Number(4).len // 隐式包装类
+
+//但是  输出num.len时又会创建一个包装类，且len属性无值
 // console.log(num.len);
+
 
 //考点
 // var arr = [1,2,3,4,5]
