@@ -50,12 +50,12 @@ console.log(num * 2); //参与四则运算时又会被识别成数字
 //面试题(阿里)
 var str = 'abc'
 str += 1 //'abc1' 注意：字符串类型与任意类型相加结果都是字符串类型
-var test = typeof(str) // test = 'string'
+var test = typeof(str) // typeof是一个内置函数，返回一个表示数据类型的字符串，test = 'string'
 if(test.length==6){// new String(test).length
     test.sign ='typeof的返回结果可能为String'
     // new String(test).sign ='typeof的返回结果可能为String'
     //delete
-}
+} 
 console.log(test.sign); //又会重新 new 一个String（），但是不会赋值
 
 // 为什么访问对象没有的属性不报错
