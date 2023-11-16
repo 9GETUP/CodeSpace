@@ -5,6 +5,7 @@
 </view> -->
 
 <!-- wx自带组件：swiper：轮播  -->
+<!-- 幻灯片 -->
 <swiper 
     indicator-dots="{{true}}"
     class="section hero white"
@@ -30,3 +31,33 @@
     </swiper-item>
     </block>>
 </swiper>
+<view class="cards">
+  <!-- 循环输出 -->
+  <view 
+    class="card"
+    wx:for="{{entities}}"
+    wx:key="id"  
+  >
+    <!-- navigator相当于a标签 -->
+    <!-- ./代表的是当前目录 相对路径 -->
+    <!-- / 代表的是绝对路径 项目的根目录 -->
+    <navigator url="/pages/vehicles/show?id= {{item.id}}">
+      <image src="{{ item.image }}"
+      mode="aspectFill"/>
+      <view class="content">
+          <view class="header">
+          {{item.header}}
+          </view>
+          <view class="sub-header">
+          {{item.sub_header}}
+          </view>
+          <view class="description">
+          {{item.description}}
+          </view>
+          <view class="meta">
+          {{item.meta.price}}
+          </view>
+      </view>
+    </navigator>
+  </view>
+</view>
