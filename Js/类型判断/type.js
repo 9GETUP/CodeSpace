@@ -14,10 +14,10 @@ let data = new Date //日期
 // 如何判断数据的类型
 
 //1. typeof 将数据转化为2进制数，前面三位是0就是对象
-// console.log(typeof(str));
-// console.log(typeof(nu)); // 2进制是一串0，所以是object, js的bug,
-// console.log(typeof(big));
-// console.log(typeof(s));
+console.log(typeof(str));
+console.log(typeof(nu)); // 2进制是一串0，所以是object, js的bug,
+console.log(typeof(big));
+console.log(typeof(s));
 //2. typeof不能判断引用类型，但是 function 除外
 console.log(typeof(arr));
 console.log(typeof(obj));
