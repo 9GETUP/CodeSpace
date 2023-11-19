@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.login__head {
+    margin-top: 60px;
+    position: relative;
+    height: 50px;
+    overflow: auto;
+}
+.back {
+    position: absolute;
+    margin-left: 10px;
+}
+.title {
+    position: absolute; 
+    left:140px;
+    color: red;
+}
+.text  {
+    position: absolute;
+    left: 160px;
+}
+
+.login__bd {
+    position: relative;
+    margin-top: 70px;
+    height: 300px;
+}
+.popbox {
+    display: none;
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+    position: absolute;
+    left: 130px;
+    top: 50px;
+    background-color: #4c4c4c;
+}
+.popbox-text{
+    position: absolute;
+    left: 28px;
+    top: 60px;
+    color: #ededed;
+}
+.icon-gou {
+    position: absolute;
+    left: 47px;
+    top: 30px;
+    color: #ededed;
+}
+
+.email {
+    text-align: center;
+    
+}
+.ema {
+    border : 0;
+    padding: 0 12px;
+    border-radius: 10px;
+    background-color: #f2f3f5;
+    width: 200px;
+    height: 55px;
+}
+.password {
+    text-align: center;
+    margin-top: 15px;
+}
+.pw {
+    padding: 0 12px;
+    border : 0;
+    border-radius: 10px;
+    background-color: #f2f3f5;
+    width: 200px;
+    height: 55px;
+}
+
+.submit {
+    text-align: center;
+    margin-top: 30px;
+}
+.sub {
+    border : 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #ffc5c4;
+    color: #fff;
+    text-align: center;
+    width: 220px;
+    height: 40px;
+}
+.reset {
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.res {
+    text-decoration: none;
+    font-size: 11px;
+    color: #2b6eae;
+    font-weight: bold;
+}
