@@ -13,6 +13,12 @@ function instanceOF(L,R){
 
     return false
 }
+let obj = {}
+let time = new Date()
 instanceOF([],Array) //true
 instanceOF([],Object) //true
-console.log(instanceOF([],Object));
+console.log(instanceOF([],Array)); //true
+console.log(instanceOF([],Object)); //true
+console.log(instanceOF(obj,Object)); //true
+console.log(instanceOF(function(){},Function)); //true
+console.log(instanceOF(time,Date)); //true
