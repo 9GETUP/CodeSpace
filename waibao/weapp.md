@@ -15,7 +15,7 @@
             - wxml html html也是 xml 的一种：
             写结构 weixinxml 没有div，只有view
             http：协议标准
-            JSON：对象字面量，数据交换标准
+            JSON：对象字面量，前后端沟通的数据交换标准。
             {
                 name："但总"，
                 age：18

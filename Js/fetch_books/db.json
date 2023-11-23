@@ -1,0 +1,48 @@
+{
+  "下面是文本数据": [],
+  "posts": [
+    {
+      "id": 1,
+      "title": "JavaScript You don't know",
+      "author": "况君豪"
+    },
+    {
+      "id": 2,
+      "title": "JavaScript高级程序设计",
+      "author": "进哥哥"
+    },
+    {
+      "title": "设计模式",
+      "author": "lyh",
+      "id": 3
+    },
+    {
+      "title": "设计模式2",
+      "author": "lyh",
+      "id": 4
+    }
+  ],
+  "下面是评论数据": [],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "学习了",
+      "postId": 1
+    },
+    {
+      "body": "学费了",
+      "postId": "1",
+      "id": 3
+    },
+    {
+      "body": "懂了",
+      "postId": "2",
+      "id": 4
+    }
+  ]
+}
