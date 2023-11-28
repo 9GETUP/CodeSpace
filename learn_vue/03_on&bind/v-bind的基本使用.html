@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <template id="my-app">
+        <!-- <h2 v-text="msg"></h2> -->
+        <!-- v-bind的作用可以把某个属性的值变成一个变量，
+            且可以简写把v-bind去掉只写一个冒号 -->
+        <img v-bind:src="imgUrl">
+        <a :href="link">百度一下</a>
+    </template>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        const App = {
+            template:'#my-app',
+            data(){
+                return {
+                    msg:'hello world',
+                    imgUrl:'https://th.bing.com/th?id=OIP.jl4pPK40IUmDL_-Wu0yMqgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2',
+                    link:'https://www.baidu.com'
+                }
+            }
+        }
+        Vue.createApp(App).mount('#app')
+    </script>
+</body>
+</html>
