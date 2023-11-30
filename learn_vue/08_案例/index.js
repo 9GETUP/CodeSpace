@@ -35,7 +35,13 @@ Vue.createApp({
       }
     },
     computed: {
-
+        fullPrice (){
+            let FullPrice = 0
+            for (let i = 0;i<(this.books.length);i++){
+                FullPrice += this.books[i].price* this.books[i].count
+            }  
+            return FullPrice
+        }
     },
     methods: {
         minus (i){
@@ -54,7 +60,6 @@ Vue.createApp({
         },
         del (i){
             this.books.splice(i,1)
-            
         }
     }
   }).mount("#app");
