@@ -1,5 +1,6 @@
 //等于等于，看文档
 
+
 //x == y怎么判定，不是num还是要转换为num
 
 NaN == NaN //false
@@ -10,3 +11,6 @@ NaN == NaN //false
 //{} == {} //flase
 
 false == [] //true
+
+let a = new Date()
+console.log(a.toString())
