@@ -28,7 +28,7 @@ const routes = [
             },
             {
                 path:'recommend',
-                //引入的第二种形式:函数调用方式
+                //引入的第二种形式:函数调用方式，代替上述的import引入
                 component: () => import('../views/homeChild/recommend.vue')
             }
         ]

@@ -15,4 +15,4 @@
 
     如果编辑项目时要先装package.json中的依赖：npm i
         - 项目要运行起来：npm run dev
-        - 将代码打包：npm run build
+        - 将代码打包：npm run build 
