@@ -28,9 +28,7 @@ export default {
     data() {
         return {
             localTime: '0.00',
-            weatherData: {
-
-            }
+            weatherData: {}
         }
     },
     created() {
@@ -51,18 +49,17 @@ export default {
             }).then((AMap) => {
                 AMap.plugin('AMap.CitySearch', function () {
                     var citySearch = new AMap.CitySearch()
-                    citySearch.getLocalCity(function (status, result) {
+                    citySearch.getLocalCity(function(status,result){
                         if (status === 'complete' && result.info === 'OK') {
                             // 查询成功，result即为当前所在城市信息
-                            console.log(result);
-
+                            // console.log(result);
                             //加载天气查询插件
                             AMap.plugin('AMap.Weather', function () {
                                 //创建天气查询实例
                                 var weather = new AMap.Weather();
 
                                 //执行实时天气信息查询
-                                weather.getLive('杭州市', function (err, data) {
+                                weather.getLive(result.city, function (err, data) {
                                     console.log(err, data);
                                     that.weatherData = data
                                 });

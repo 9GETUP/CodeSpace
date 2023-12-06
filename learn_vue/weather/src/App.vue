@@ -13,7 +13,7 @@
   }
 </script>
 
-<style lang="css" >
+<style lang="css">
 *{
   margin: 0;
   padding: 0;

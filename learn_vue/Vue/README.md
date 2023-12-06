@@ -1,4 +1,4 @@
-- vue 脚手架
+- vue 脚手架: 例如vite
     - npm init vite 
         1. 初始化vue项目，远程下载一个项目模板 starter
         2. 初始化为vite，快，用来开发vue，启动项目(vite负责流程，vue负责页面)
