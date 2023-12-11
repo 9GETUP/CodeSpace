@@ -23,7 +23,7 @@ import IconPark from '@/components/common/IconPark.vue'
 // 模块化（'./useMenu.js'） 封装一个useMenu hooks编程
 // 数据离开组件，组件就很好读
 // 范式 规定用 use 开头 函数式编程
-import { useMenu } from './useMenu.js'
+import { useMenu } from './useMenu.js' 
 const { menus, currentKey, changeMenu } = useMenu()
 
 </script>
