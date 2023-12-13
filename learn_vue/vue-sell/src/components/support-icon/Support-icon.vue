@@ -3,26 +3,22 @@
 </template>
 
 <script>
-  //父子组件的通讯
   export default {
-    //接收
-    props: {
-      // 该组件作为子组件 接收 父组件传进来的值
+    props: { // 接受父组件传进来的值
       size: {
-        type: String, //代表type的类型
-        default: '1' //默认值为1
+        type: String,
+        default: '1'
       },
       type: {
         type: Number,
         default: 0
       }
     },
-    computed: { // 计算属性中的函数名直接当成数据源使用，不用调用
+    computed: { // 计算属性中的函数名直接当成数据源使用
       iconClass() {
         const classMap = ['decrease', 'discount', 'special', 'invoice', 'guarantee']
-        //通过父组件传的值，决定span使用谁的样式
-        return `icon-${this.size} ${classMap[this.type]}`  //模板字符串，反引号
-      } 
+        return `icon-${this.size} ${classMap[this.type]}`
+      }
     }
   }
 </script>

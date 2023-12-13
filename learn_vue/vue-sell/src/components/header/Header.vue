@@ -10,9 +10,10 @@
           <span class="name">{{seller.name}}</span>
         </div>
         <div class="description">{{seller.description}}/{{seller.deliveryTime}}分钟送达</div>
+       
         <div class="support" v-if="seller.supports">
           <!--  -->
-          <support-icon size="1" :type="seller.supports[0].type" />
+          <support-icon size="1" :type="seller.supports[0].type"/>
           <span class="text">{{seller.supports[0].description}}</span>
         </div>
       </div>
@@ -29,8 +30,9 @@
     </div>
 
     <div class="bg" v-if="seller.avatar" :style="{backgroundImage: `url(${seller.avatar})`}"></div>
-
+    
     <header-detail v-show="detailShow" @hide="handle"/>
+
   </div>
 </template>
 
@@ -44,25 +46,22 @@ export default {
   },
   props: {
     seller: {
-      type:Object,
-
-      //省略了return 一个对象
-      default: () =>{}
+      type: Object,
+      default: () => {}
     }
   },
-  data(){
+  data() {
     return {
       detailShow: false
     }
   },
-  methods:{
-    showDetail(){
+  methods: {
+    showDetail() {
       this.detailShow = true;
     },
-    handle(val){
-      //为什么关闭了？因为点击时也会点到 header(冒泡)
+    handle(val) {
+      // console.log('子组件发布了一个事件hide，值为:', val);
       this.detailShow = val
-      
     }
   }
 }
@@ -142,6 +141,7 @@ export default {
       }
     }
   }
+
   .bulletin-wrapper{
     display: flex;
     height: 28px;
@@ -150,11 +150,9 @@ export default {
     align-items: center;
     color: @color-white;
     .bulletin-title{
-      //width: 22px;
-      // 在弹性容器里 第三个参数是不缩放的情况下的大小
+      // width: 22px;
       flex: 0 0 22px;
       height: 12px;
-      //调用封装的函数
       .bg-image('bulletin');
       background-size: 100% 100%;
     }
@@ -162,7 +160,6 @@ export default {
       flex: 1;
       margin-left: 4px;
       font-size: @fontsize-small-s;
-      //单行显示 超出则打省略
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -172,6 +169,7 @@ export default {
       font-size: @fontsize-small-s;
     }
   }
+
   .bg{
     position: absolute;
     left: 0;
