@@ -19,7 +19,9 @@ export default {
   },
   created() {
     getSeller().then(res => {
+      //打印商家信息
       console.log(res);
+      //用sellerData来承接
       this.sellerData = res
     })
   }

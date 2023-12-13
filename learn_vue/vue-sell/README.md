@@ -4,7 +4,7 @@
 # 组件化(三步走)
 1. import 引入
 2. components 注册
-3. 使用: 例如：<header-detail />
+3. 使用: 例如：<header-detail />或<HeaderDetail /> 大写改小写，后面那个驼峰改为横杠
 
 # 父子组件通讯
 1. 父组件在子组件使用处绑定属性以传值
@@ -16,5 +16,5 @@
 
 # 在App.vue中获取到了商家信息
 
-# transition 
+# transition
 vue官方内置组件 过渡动画
