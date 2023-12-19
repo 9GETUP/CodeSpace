@@ -1,4 +1,5 @@
 <template>
+    <!-- 父子组件通信 -->
     <div>
         <div class="head">
             <!-- v-model双向数据绑定 -->
