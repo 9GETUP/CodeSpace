@@ -11,7 +11,7 @@ const { getPersonalized} = usePersonalizedStore()
 
 onMounted(async () => {
   await getPersonalized()
-})
+}) 
 </script>
 
 <template>
