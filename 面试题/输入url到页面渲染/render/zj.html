@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script>
+        // 字节面试题
+        let el = document.getElementById('app')
+        el.style.width = (el.offsetWidth + 1) + 'px'
+        el.style.width = 1 + 'px'
+
+        //上述有几次回流
+        // 先触发了el.offsetWidth，但队列为空，所以不造成回流
+        // el.style.width进入队列，然后批量化执行，总共一次回流
+    </script>
+</body>
+</html>
