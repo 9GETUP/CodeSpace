@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="flex items-center mr-5">
-            <IconPark :icon="Mail" :size="iconSize" 
+            <IconPark :icon="Mail" :size="iconSize"  
             stroke-width="2" class="icon-button"/>
             <IconPark :icon="Platte" :size="iconSize" 
             stroke-width="2" class="icon-button"/>
