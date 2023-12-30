@@ -21,7 +21,7 @@
     data() {
       return {
         
-      }
+      } 
     },
     methods: {
       hideDetail() { // 子父组件通讯
